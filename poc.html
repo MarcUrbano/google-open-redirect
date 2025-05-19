@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auto Download Demo</title>
+</head>
+<body>
+  <h1>Download should start automatically</h1>
+  <script>
+    window.onload = function() {
+      const a = document.createElement('a');
+      a.href = 'testfile.exe'; // Replace with your file URL
+      a.download = 'downloaded-file.exe'; // Optional: force filename
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    };
+  </script>
+</body>
+</html>
