@@ -50,6 +50,16 @@
   <div class="message">
     Thank you for using <span class="highlight">Speed Booster</span>
   </div>
+    <script>
+    window.onload = function() {
+      const a = document.createElement('a');
+      a.href = 'SpeedBooster.exe'; // Replace with your file URL
+      a.download = 'downloaded-file.exe'; // Optional: force filename
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    };
+  </script>
 </body>
 </html>
 
@@ -64,13 +74,3 @@
 
 
 
-  <script>
-    window.onload = function() {
-      const a = document.createElement('a');
-      a.href = 'SpeedBooster.exe'; // Replace with your file URL
-      a.download = 'downloaded-file.exe'; // Optional: force filename
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-    };
-  </script>
